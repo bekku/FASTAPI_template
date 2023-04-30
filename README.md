@@ -1,0 +1,2 @@
+# FASTAPI_template
+pythonのFASTAPIのテンプレート
