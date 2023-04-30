@@ -1,2 +1,2 @@
-# FASTAPI_template
-pythonのFASTAPIのテンプレート
+# Travel_Advisor_Backend
+Travel_Advisor_Backend
