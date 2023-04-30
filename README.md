@@ -19,7 +19,7 @@ Mainが存在するディレクトリ化で、下記のコードによりサー�
 ### docker環境でサーバー起動方法
 docker-composeの存在するディレクトリ化で、下記のコードでDcoker上の環境でサーバー起動
 
--pはホストPCの8000をdockerの8000へ流す意味：https://qiita.com/progra_dango/items/a115bc038c45879df83f
+-pは「ホストPCの8000番ポートへの通信は全てコンテナの3000番ポートへ流す」という意味：https://qiita.com/progra_dango/items/a115bc038c45879df83f
 
 `docker-compose run　-p 8000:8000 python3 uvicorn main:app --host 127.0.0.1 --port 8000 --reload `
 
