@@ -1,10 +1,24 @@
-# FASTAPI_template
-FASTAPIのテンプレートです。
+# FASTAPIのテンプレート
 
-### Mainが存在するディレクトリ化で、下記のコードによりサーバーを実行
+## 環境構築
+
+### docker build+run
+docker-composeが存在するディレクトリ化で、下記を実行することでbuildされて、runされる。
+
+`docker compose up -d`
+
+`docker compose down `
+
+## サーバー起動
+
+### FASTAPIのサーバー起動方法
+Mainが存在するディレクトリ化で、下記のコードによりサーバー起動
+
 `uvicorn main:app --host 127.0.0.1 --port 8000 --reload`
 
-### docker-composeの存在するディレクトリ化で、下記のコードでDcoker上の環境でサーバーを実行
+### docker環境でサーバー起動方法
+docker-composeの存在するディレクトリ化で、下記のコードでDcoker上の環境でサーバー起動
+
 -pはホストPCの8000をdockerの8000へ流す意味：https://qiita.com/progra_dango/items/a115bc038c45879df83f
 
 `docker-compose run　-p 8000:8000 python3 uvicorn main:app --host 127.0.0.1 --port 8000 --reload `
