@@ -21,7 +21,7 @@ docker-composeの存在するディレクトリ化で、下記のコードでDco
 
 -pは「ホストPCの8000番ポートへの通信は全てコンテナの8000番ポートへ流す」という意味：https://qiita.com/progra_dango/items/a115bc038c45879df83f
 
-`docker-compose run　-p 8000:8000 python3 uvicorn main:app --host 127.0.0.1 --port 8000 --reload `
+`docker-compose run -p 8000:8000 python3 uvicorn main:app --host 0.0.0.0 --port 8000 --reload  `
 
 ### docker上のpython環境へ入る
 `docker compose exec python3 bash`
